@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > img {
+  width: 500px;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.thumb {
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+header {
+  width: 100%;
+  background-color: transparent;
+  height: 70px;
+}
+
+.header-container {
+  width: 1140px;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  color: #012970;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.menu {
+  float: right;
+  line-height: 70px;
+}
+
+.menu ul li {
+  display: inline;
+}
+.menu ul li a {
+  color: #013289;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.menu ul li a:hover {
+  color: #4154f1;
+}
+
+#check {
+  display: none;
+}
+
+.chkbtn {
+  float: right;
+  line-height: 70px;
+  color: #013289;
+  display: none;
+}
+
+.chkbtn:hover {
+  color: #4154f1;
+  cursor: pointer;
+}
+
+/* banner */
+
+#banner {
+  width: 100%;
+  background-image: url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.banner-container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 43px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.banner-container p {
+  color: #444444;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.banner-container button {
+  font-family: "Nunito", sans-serif;
+  border-radius: 3px;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.banner-container button:hover {
+  cursor: pointer;
+}
+
+/* about */
+#about {
+  width: 100%;
+  margin: 70px 0;
+}
+
+.about-container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  background-color: #f6f9ff;
+  padding: 30px;
+}
+
+.about-text h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4154f1;
+  margin-bottom: 15px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.about-text p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+
+.about-text button {
+  font-family: "Nunito", sans-serif;
+  border-radius: 3px;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #4154f1;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.about-img img {
+  width: 700px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* values */
+#values {
+  width: 100%;
+  margin: 100px 0;
+}
+
+.values-head {
+  text-align: center;
+  margin: 10px 0 30px 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
+.values-subhead {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+}
+
+.values-container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.values-box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+}
+
+.values-box img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  transition: 0.9s;
+}
+
+.values-box:hover img {
+  /* padding: 30px 50px; */
+  transform: scale(0.8);
+}
+
+.values-box h3 {
+  font-size: 21px;
+  color: #012970;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.values-box p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
